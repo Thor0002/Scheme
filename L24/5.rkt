@@ -1,0 +1,16 @@
+#lang scheme
+
+(define (f A B C)
+  (define Ax (car A) )
+  (define Ay (cdr A) )
+  (define Bx (car B) )
+  (define By (cdr B) )
+  (define Cx (car C) )
+  (define Cy (cdr C) )
+  (define D (* 2 (+ (* Ax (- By Cy) ) (* Bx (- Cy Ay) ) (* Cx (- Ay By) ) ) ) )
+  (cons (/ (+ (* (+ (* Ax Ax) (* Ay Ay) ) (- By Cy) )
+              (* (+ (* Bx Bx) (* By By) ) (- Cy Ay) )
+              (* (+ (* Cx Cx) (* Cy Cy) ) (- Ay By) ) ) D)
+        (/ (+ (* (+ (* Ax Ax) (* Ay Ay) ) (- Cx Bx) )
+              (* (+ (* Bx Bx) (* By By) ) (- Ax Cx) )
+              (* (+ (* Cx Cx) (* Cy Cy) ) (- Bx Ax) ) ) D) ) )
