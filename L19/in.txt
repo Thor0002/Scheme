@@ -1,0 +1,36 @@
+﻿#lang scheme
+
+(
+define www '(define (sw "oo))) ;(define(f x) 1)
+(define (F x) 1 ); afjnasdjksdjsjfbjsjnb;";asdacfavnjvnajn(define (g x) 1)
+12) ) );(define (g x) 1)
+(;asdacfavnjvnajn(define (g x) 1);;;;;
+define;asdacfavnjvnajn(define (g x) 1)
+(x y) www);asdacfavnjvnajn(define (g x) 1)
+;(define (g x) 1)
+(;asdacfavnjvnajn(define (g x) 1)''''''""""";;;;;
+define;asdacfavnjvnajn(define (g x) 1)''''''""""";;;;;
+(t y) 1);asdacfavnjvnajn(define (g x) 1)''''''""""";;;;;
+(;(define (g x) 1)
+define;(define (g x) 1)
+xxx;(define (g x) 1)
+1);(define (g x) 1)
+;(define (g x) 1)
+(print "");(define (g x) 1)
+(
+define ww '(define (sw ;oo))) ;(define(f x) 1)
+'(define (F x) 1 ); afjnasdjksdjsjfbjsjnb;";asdacfavnjvnajn(define (g x) 1)
+12) ) );(define (g x) 1)
+(
+define
+(
+s
+a
+)
+1
+)
+
+
+
+                            
+
