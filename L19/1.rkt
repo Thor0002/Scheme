@@ -1,0 +1,23 @@
+#lang scheme
+
+(define (f file-in file-out . a)
+  (define in (open-input-file file-in))
+  (define out (open-output-file file-out #:exists 'replace))
+  (define (line) (display #\return out) (display #\newline out) )
+  (define (next s a)
+    (define c (read-char in))
+    (if (equal? c eof)
+        (close-output-port out)
+        (cond
+          ((= s 0) (if (equal? c #\%)
+                       (next 1 a)
+                       (begin (display c out) (next 0 a) ) ) )
+          ((= s 1) (if (equal? c #\%)
+                       (begin (display c out) (next 0 a) )
+                   (if (and (char<=? #\0 c) (char>=? #\9 c) )
+                       (next 2 a)
+                       (begin (display c out) (next 0 a) ) ) ) )
+          ((= s 2) (if (equal? c #\%)
+                       (begin (display (car a) out) (next 0 (cdr a) ))
+                       (next 2 a) ) ) ) ) )
+(next 0 a) )
