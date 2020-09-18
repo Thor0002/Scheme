@@ -1,3 +1,3 @@
 # Scheme
 Programs in the language Scheme  
-Laboratory work on algorithmic analysis
+Laboratory work on Algorithmic analysis
